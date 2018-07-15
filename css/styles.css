@@ -1,0 +1,37 @@
+body {
+	position: relative;
+}
+
+.nav-item {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.nav-pills .nav-link {
+	color: #000000;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+	color: #000000;
+	cursor: default;
+	background-color: #cccccc;
+}
+
+#navbar-target {
+	background-color: #dfdfdf;
+	overflow: auto;
+	padding: 5px;
+}
+
+.nav {
+	flex-wrap: nowrap;
+}
+
+.rk-logo {
+	height: 40px;
+}
+
+.section {
+	min-height: 100vh;
+	padding-top: 96px;
+}
