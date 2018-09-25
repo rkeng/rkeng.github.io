@@ -76,6 +76,10 @@ body {
 	min-height: 100vh;
  }
 
+.content-404 {
+	display: none;
+}
+
 /* Wobble Vertical */
 @-webkit-keyframes hvr-wobble-vertical {
 	16.65% {
