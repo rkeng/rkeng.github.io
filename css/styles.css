@@ -80,6 +80,10 @@ body {
 	display: none;
 }
 
+.wobble-logo {
+	width: 70px;
+}
+
 /* Wobble Vertical */
 @-webkit-keyframes hvr-wobble-vertical {
 	16.65% {
