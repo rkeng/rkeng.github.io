@@ -144,7 +144,7 @@ body {
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
+.hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active, .wobble-onload {
 	-webkit-animation-name: hvr-wobble-vertical;
 	animation-name: hvr-wobble-vertical;
 	-webkit-animation-duration: 1s;
