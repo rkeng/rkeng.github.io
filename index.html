@@ -57,11 +57,11 @@
 				<div class="col-md-10">
 					<p>Hello! My name is <span class="highlight">Ryan Keng</span>.<br>
 					I&rsquo;m a fourth-year <span class="highlight">Computer Science</span> major at University of California, San Diego.<br>
-					I am currently working for UCSD&rsquo;s Creative Services and Publications as <span class="highlight">Student Web Producer</span>.<br>
+					I am currently working at UCSD&rsquo;s Creative Services and Publications as <span class="highlight">Student Web Producer</span>.<br>
 					I was a <span class="highlight">Web Development Intern</span> at Foxconn Technology Group during summer 2017.<br>
 					I&rsquo;m currently looking for full-time opportunities in 2019.</p>
-					<a href="/files/RyanKengFA18.pdf" target="_blank" class="btn btn-outline-dark">Resume Link</a>
-					<a href="#contact" class="btn btn-outline-dark js-scroll-trigger" role="button">Contact Me</a>
+					<a href="/files/RyanKengFA18.pdf" target="_blank" class="btn btn-light">Resume Link</a>
+					<a id="contact-popover" tabindex="0" class="btn btn-light" role="button" data-toggle="popover" data-trigger="focus">Contact Me</a>
 				</div>
 			</div>
 		</div>
@@ -271,30 +271,21 @@
 	</div>
 
 	<footer id="contact" class="footer-offset">
-		<div class="container text-center">
-			<a href="https://github.com/rkeng" class="footer-icon"><i class="fab fa-github fa-2x"></i></a>
-			<a href="https://www.linkedin.com/in/ryan-keng/" class="footer-icon"><i class="fab fa-linkedin-in fa-2x"></i></a>
-			<a href="mailto:rkeng@ucsd.edu" class="footer-icon"><i class="far fa-envelope fa-2x"></i></a>
+		<div class="container text-right">
+			<a href="https://github.com/rkeng" target="_blank" class="footer-icon github hvr-grow"><i class="fab fa-github fa-2x"></i></a>
+			<a href="https://www.linkedin.com/in/ryan-keng/" target="_blank" class="footer-icon linkedin hvr-grow"><i class="fab fa-linkedin-in fa-2x"></i></a>
+			<a href="mailto:rkeng@ucsd.edu" class="footer-icon email hvr-grow"><i class="far fa-envelope fa-2x"></i></a>
 		</div>
 	</footer>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
-	<script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 	<script src="/js/animate_scroll.js"></script>
-
-	<script>
-		$('.popover-dismiss').popover({
-			trigger: 'focus'
-		 })
-	</script>
+	<script src="/js/popover.js"></script>
 </body>
 </html>
