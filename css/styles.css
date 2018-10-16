@@ -2,6 +2,11 @@ body {
 	position: relative;
 }
 
+.highlight {
+	color: #007bff;
+	font-weight: bold;
+}
+
 .card-body p {
 	margin-bottom: 0.5rem;
 }
