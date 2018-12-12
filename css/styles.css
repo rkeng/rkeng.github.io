@@ -85,6 +85,10 @@ body {
 	.section-offset {
 		padding-top: 150px;
 	}
+	.sticky-h4 {
+		position: sticky;
+		top: 100px;
+	}
 }
 
 /* 404 Page */
