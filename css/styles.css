@@ -1,5 +1,10 @@
 body {
 	position: relative;
+	font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+	margin: 0;
 }
 
 .highlight {
