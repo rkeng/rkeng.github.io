@@ -45,9 +45,6 @@
 						class="rk-logo"></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#about">About</a>
-			</li>
-			<li class="nav-item">
 				<a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
 			</li>
 			<li class="nav-item">
@@ -61,29 +58,26 @@
 			</li>
 		</ul>
 	</nav>
+
 	<div class="container">
-		<div id="about" class="section-offset">
+		<div id="about">
+			<div id="typed-strings" class="row">
+				<p>Welcome.</p>
+				<p>I&rsquo;m <strong>Ryan Keng</strong>, a web developer.</p>
+			</div>
+			<div id="typed-container">
+				<span id="typed"></span>
+			</div>
 			<div class="row">
-				<div class="col-md-3">
-					<div class="sticky-h4">
-						<h4>About Me</h4>
-					</div>
-				</div>
-				<div class="col-md-9">
-					<p>Hello! My name is <span class="highlight">Ryan Keng</span>.<br>
-						I&rsquo;m a fourth-year <span class="highlight">Computer Science</span> major at University of
-						California, San
-						Diego.<br>
-						I am currently working at UCSD&rsquo;s Creative Services and Publications as <span
-							class="highlight">Student Web
-							Developer</span>.<br>
-						I was a <span class="highlight">Web Development Intern</span> at Foxconn Technology Group during
-						summer 2017.<br>
-						I&rsquo;m currently looking for full-time opportunities in 2019.</p>
-					<a href="/files/RyanKengWI19.pdf" class="btn btn-light">Resume Link</a>
+				<div class="col-md-12">
+					<p>
+						I&rsquo;m a fourth-year <strong>Computer Science</strong> major at University of
+						California, San Diego.<br>
+						I&rsquo;m currently looking for full-time opportunities in 2019.
+					</p>
+					<a href="/files/RyanKengSP19.pdf" class="btn btn-light">Resume</a>
 					<a id="contact-popover" tabindex="0" class="btn btn-light" role="button" data-toggle="popover"
-						data-trigger="focus">Contact
-						Me</a>
+						data-trigger="focus">Get In Touch</a>
 				</div>
 			</div>
 		</div>
@@ -250,7 +244,9 @@
 							</div>
 						</div>
 						<div class="card-body">
-							<p><span class="badge badge-info">In Progress</span> | <span class="badge badge-primary">React</span> <span class="badge badge-primary">MongoDB</span>
+							<p><span class="badge badge-info">In Progress</span> | <span
+									class="badge badge-primary">React</span> <span class="badge badge-primary">Express</span>
+								<span class="badge badge-primary">MongoDB</span>
 								<span class="badge badge-primary">Heroku</span></p>
 							<h5 class="card-title">FlyerFighter</h5>
 							<h6 class="card-subtitle mb-2 text-muted">December 2018&ndash;Present</h6>
@@ -261,6 +257,7 @@
 								in progress.
 								Stay tuned!
 							</p>
+							<a href="https://flyerfighter.ucsdtriplec.org" class="card-link">Project Staging Site</a>
 						</div>
 					</div>
 				</div>
@@ -281,7 +278,8 @@
 							</div>
 						</div>
 						<div class="card-body">
-							<p><span class="badge badge-warning">NEW!</span> | <span class="badge badge-primary">Angular</span> <span class="badge badge-primary">AWS
+							<p><span class="badge badge-warning">NEW!</span> | <span class="badge badge-primary">Angular</span>
+								<span class="badge badge-primary">AWS
 									Lightsail</span></p>
 							<h5 class="card-title">ServiceNow Newsletter</h5>
 							<h6 class="card-subtitle mb-2 text-muted">Feb 2019</h6>
@@ -433,6 +431,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 	<script src="/js/animate_scroll.js"></script>
 	<script src="/js/popover.js"></script>
+	<script src="/js/typed.min.js"></script>
+	<script>
+		var typed = new Typed('#typed', {
+			stringsElement: '#typed-strings',
+			typeSpeed: 75,
+			backSpeed: 25,
+			backDelay: 1000
+		});
+	</script>
 </body>
 
 </html>

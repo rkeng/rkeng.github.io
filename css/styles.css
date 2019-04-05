@@ -7,13 +7,36 @@ hr {
 	margin: 0;
 }
 
+#about {
+	height: 100vh;
+	padding-top: 25vh;
+}
+
+#typed, .typed-cursor {
+	font-size: 40px;
+}
+
+#typed-container {
+	height: 150px;
+	max-height: 150px;
+}
+
 .highlight {
 	color: #007bff;
 	font-weight: bold;
 }
 
 .btn-light {
-	border-color: #ced4da;
+	border-color: #212529;
+	background-color: #ffffff;
+}
+
+.btn-light:hover,
+.btn-light:active,
+.btn-light:not(:disabled):not(.disabled):active,
+.btn-light:focus {
+	border-color: #212529;
+	background-color: rgba(0,0,0,.03);
 }
 
 .card-body p {
@@ -79,15 +102,27 @@ hr {
 
 .section-offset {
 	opacity: 0;
-	padding-top: 81px;
+	padding-top: 111px;
 }
 
+@media (max-width: 320px) {
+	#typed-container {
+		height: 180px;
+		max-height: 180px;
+	}
+	#about {
+		padding-top: 20vh;
+	}
+}
 @media (min-width: 576px) {
-	.section-offset {
-		padding-top: 111px;
+	#typed, .typed-cursor {
+		font-size: 50px;
 	}
 }
 @media (min-width: 768px) {
+	#about {
+		padding-top: 33vh;
+	}
 	.section-offset {
 		padding-top: 150px;
 	}
