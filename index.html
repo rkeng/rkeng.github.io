@@ -61,10 +61,6 @@
 
 	<div class="container">
 		<div id="about">
-			<div id="typed-strings" class="row">
-				<p>Welcome.</p>
-				<p>I&rsquo;m <strong>Ryan Keng</strong>, a web developer.</p>
-			</div>
 			<div id="typed-container">
 				<span id="typed"></span>
 			</div>
@@ -434,7 +430,7 @@
 	<script src="/js/typed.min.js"></script>
 	<script>
 		var typed = new Typed('#typed', {
-			stringsElement: '#typed-strings',
+			strings: ["Welcome.", "I&rsquo;m <strong>Ryan Keng</strong>, a web developer."],
 			typeSpeed: 50,
 			backSpeed: 25,
 			backDelay: 1000,
