@@ -435,9 +435,13 @@
 	<script>
 		var typed = new Typed('#typed', {
 			stringsElement: '#typed-strings',
-			typeSpeed: 75,
+			typeSpeed: 50,
 			backSpeed: 25,
-			backDelay: 1000
+			backDelay: 1000,
+			fadeOut: true,
+			onComplete: () => {
+				setTimeout(() => {document.querySelectorAll(".typed-cursor")[0].style.display = "none"}, 1750)
+			}
 		});
 	</script>
 </body>
