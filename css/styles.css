@@ -26,6 +26,14 @@ hr {
 	font-weight: bold;
 }
 
+.popover {
+	border-color: #212529;
+}
+
+.popover>.arrow::before {
+	border-right-color: #212529;
+}
+
 .btn-light {
 	border-color: #212529;
 	background-color: #ffffff;
@@ -39,8 +47,16 @@ hr {
 	background-color: rgba(0,0,0,.03);
 }
 
+.card {
+	border: 1px solid #212529;
+}
+
 .card-body p {
 	margin-bottom: 0.5rem;
+}
+
+.card-header {
+	border-bottom: 1px solid #212529;
 }
 
 .nav-item {
