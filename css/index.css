@@ -13,11 +13,11 @@
         --text-color: #fff;
     }
     .construction img {
-        -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(-1px 1px 0 white);
-        filter: drop-shadow(1px 1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(-1px 1px 0 white);
+        -webkit-filter: drop-shadow(1px 1px 0 var(--text-color)) drop-shadow(1px -1px 0 var(--text-color)) drop-shadow(-1px -1px 0 var(--text-color)) drop-shadow(-1px 1px 0 var(--text-color));
+        filter: drop-shadow(1px 1px 0 var(--text-color)) drop-shadow(1px -1px 0 var(--text-color)) drop-shadow(-1px -1px 0 var(--text-color)) drop-shadow(-1px 1px 0 var(--text-color));
     }
     .not-found a {
-        color: white;
+        color: var(--text-color);
     }
 }
 
@@ -36,4 +36,9 @@ body {
 
 h1, h2 {
     font-family: var(--font-family-heading);
+}
+
+.not-found .jumbo {
+    font-family: var(--font-family-heading);
+    font-size: 7rem;
 }
