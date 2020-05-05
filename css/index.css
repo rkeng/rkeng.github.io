@@ -33,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
 }
 
 h1, h2 {
@@ -42,4 +43,5 @@ h1, h2 {
 .not-found .jumbo {
     font-family: var(--font-family-heading);
     font-size: 7rem;
+    font-weight: bold;
 }
