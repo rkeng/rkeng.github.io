@@ -1,0 +1,36 @@
+:root {
+    --font-family-heading: 'Nunito', sans-serif;
+    --font-family-content: 'Lora', serif;
+    --primary-color: #fff;
+    --background-color: #e5e5e5;
+    --text-color: #2d2d2d;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #455363;
+        --background-color: #1f2935;
+        --text-color: #fff;
+    }
+    .construction img {
+        -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(-1px 1px 0 white);
+        filter: drop-shadow(1px 1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(-1px 1px 0 white);
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.construction, .not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.construction h1, .construction h2 {
+    font-family: var(--font-family-heading);
+}
