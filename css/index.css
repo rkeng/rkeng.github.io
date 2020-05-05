@@ -34,6 +34,6 @@ body {
     height: 100vh;
 }
 
-.construction h1, .construction h2 {
+h1, h2 {
     font-family: var(--font-family-heading);
 }
