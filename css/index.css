@@ -1,31 +1,39 @@
+/* CSS Variables */
+
 :root {
     --font-family-heading: 'Nunito', sans-serif;
     --font-family-content: 'Lora', serif;
     --primary-color: #fff;
     --background-color: #e5e5e5;
     --text-color: #2d2d2d;
+    --link-color: #68839b;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-color: #455363;
-        --background-color: #1f2935;
-        --text-color: #fff;
-    }
-    .construction img {
-        -webkit-filter: drop-shadow(1px 1px 0 var(--text-color)) drop-shadow(1px -1px 0 var(--text-color)) drop-shadow(-1px -1px 0 var(--text-color)) drop-shadow(-1px 1px 0 var(--text-color));
-        filter: drop-shadow(1px 1px 0 var(--text-color)) drop-shadow(1px -1px 0 var(--text-color)) drop-shadow(-1px -1px 0 var(--text-color)) drop-shadow(-1px 1px 0 var(--text-color));
-    }
-    .not-found a {
-        color: var(--text-color);
-    }
-}
+/* Global styles */
 
 body {
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
 }
+
+h1, h2 {
+    font-family: var(--font-family-heading);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:link, a:visited {
+    text-decoration: unset;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Content styles */
 
 .construction, .not-found {
     display: flex;
@@ -34,14 +42,31 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-}
-
-h1, h2 {
-    font-family: var(--font-family-heading);
+    overflow: hidden;
 }
 
 .not-found .jumbo {
     font-family: var(--font-family-heading);
     font-size: 7rem;
     font-weight: bold;
+}
+
+/* Dark theme */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #455363;
+        --background-color: #1f2935;
+        --text-color: #fff;
+    }
+    a {
+        color: var(--text-color);
+    }
+    a:link, a:visited {
+        text-decoration: underline;
+    }
+    .construction img {
+        -webkit-filter: drop-shadow(1px 1px 0 var(--text-color)) drop-shadow(1px -1px 0 var(--text-color)) drop-shadow(-1px -1px 0 var(--text-color)) drop-shadow(-1px 1px 0 var(--text-color));
+        filter: drop-shadow(1px 1px 0 var(--text-color)) drop-shadow(1px -1px 0 var(--text-color)) drop-shadow(-1px -1px 0 var(--text-color)) drop-shadow(-1px 1px 0 var(--text-color));
+    }
 }
