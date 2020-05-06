@@ -42,7 +42,7 @@ a:hover {
     align-items: center;
     height: 100vh;
     text-align: center;
-    overflow: hidden;
+    padding: 0 1rem;
 }
 
 .not-found .jumbo {
@@ -64,9 +64,5 @@ a:hover {
     }
     a:link, a:visited {
         text-decoration: underline;
-    }
-    .construction img {
-        -webkit-filter: drop-shadow(1px 1px 0 var(--text-color)) drop-shadow(1px -1px 0 var(--text-color)) drop-shadow(-1px -1px 0 var(--text-color)) drop-shadow(-1px 1px 0 var(--text-color));
-        filter: drop-shadow(1px 1px 0 var(--text-color)) drop-shadow(1px -1px 0 var(--text-color)) drop-shadow(-1px -1px 0 var(--text-color)) drop-shadow(-1px 1px 0 var(--text-color));
     }
 }
