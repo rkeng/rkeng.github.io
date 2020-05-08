@@ -35,6 +35,14 @@ a:hover {
 
 /* Content styles */
 
+.rk-logo {
+    height: 100px;
+    width: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(/img/rk-logo-dark.svg);
+}
+
 .construction, .not-found {
     display: flex;
     flex-direction: column;
@@ -64,5 +72,8 @@ a:hover {
     }
     a:link, a:visited {
         text-decoration: underline;
+    }
+    .rk-logo {
+        background-image: url(/img/rk-logo-light.svg);
     }
 }
