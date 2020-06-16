@@ -1,8 +1,7 @@
 /* CSS Variables */
 
 :root {
-    --font-family-heading: 'Nunito', sans-serif;
-    --font-family-content: 'Lora', serif;
+    --font-family: 'Lora', serif;
     --primary-color: #fff;
     --background-color: #e5e5e5;
     --text-color: #2d2d2d;
@@ -17,8 +16,12 @@ body {
     color: var(--text-color);
 }
 
-h1, h2 {
-    font-family: var(--font-family-heading);
+h1, p, a {
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 1.5rem;
 }
 
 a {
@@ -36,14 +39,14 @@ a:hover {
 /* Content styles */
 
 .rk-logo {
-    height: 100px;
-    width: 100px;
+    height: 4rem;
+    width: 4rem;
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(/img/rk-logo-dark.svg);
 }
 
-.construction, .not-found {
+.not-found {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +57,7 @@ a:hover {
 }
 
 .not-found .jumbo {
-    font-family: var(--font-family-heading);
+    font-family: var(--font-family);
     font-size: 7rem;
     font-weight: bold;
 }
@@ -72,6 +75,9 @@ a:hover {
     }
     a:link, a:visited {
         text-decoration: underline;
+    }
+    a:hover {
+        text-decoration: none;
     }
     .rk-logo {
         background-image: url(/img/rk-logo-light.svg);
