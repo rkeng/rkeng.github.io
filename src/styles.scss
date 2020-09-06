@@ -1,0 +1,85 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url(https://fonts.googleapis.com/css2?family=Lora);
+
+/* CSS Variables */
+
+:root {
+  --font-family: "Lora", serif;
+  --primary-color: #fff;
+  --background-color: #e5e5e5;
+  --text-color: #2d2d2d;
+  --link-color: #68839b;
+}
+
+/* Global styles */
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+p,
+a {
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:link,
+a:visited {
+  text-decoration: unset;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Content styles */
+
+.rk-logo {
+  height: 4rem;
+  width: 4rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(assets/images/rk-logo-dark.svg);
+}
+
+.jumbo {
+  font-family: var(--font-family);
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+/* Dark theme */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #455363;
+    --background-color: #1f2935;
+    --text-color: #fff;
+  }
+  a {
+    color: var(--text-color);
+  }
+  a:link,
+  a:visited {
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .rk-logo {
+    background-image: url(assets/images/rk-logo-light.svg);
+  }
+}
